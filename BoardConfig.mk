@@ -95,6 +95,7 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
+TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # System as root
