@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="raphael"
+FDEVICE="cepheus"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep -w \"$FDEVICE\")
@@ -44,7 +44,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_USE_ZSTD_BINARY=1
     export FOX_DELETE_AROMAFM=1
     export FOX_USE_DATE_BINARY=1
-    export TARGET_DEVICE_ALT="raphaelin"
     [ "$FOX_BUILD_TYPE" = "Stable" ] && export OF_ADVANCED_SECURITY=1;
 
     # Maintainer Stuff
