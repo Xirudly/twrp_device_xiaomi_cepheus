@@ -5,7 +5,7 @@
 #
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := raphael,raphaelin
+TARGET_OTA_ASSERT_DEVICE := cepheus
 
 # Crypto
 PRODUCT_PACKAGES += \

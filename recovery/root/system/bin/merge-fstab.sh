@@ -1,7 +1,7 @@
 #!/system/bin/sh
 
 rom_has_dynamic_partitions() {
-    local markers="raphael_dynamic_partitions|qti_dynamic_partitions|raphael_dynpart";
+    local markers="cepheus_dynamic_partitions|qti_dynamic_partitions";
 
     dd if=/dev/block/by-name/system bs=256k count=1 | strings | grep -q -E $markers > /dev/null
     if [ $? -eq 0 ]; then
